@@ -1,0 +1,165 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    color: #111;
+    background: #ffffff;
+}
+
+.header {
+    background: #0b5b4a;
+    color: #fff;
+    padding: 8px 12px;
+    font-weight: 700;
+}
+
+main.container {
+    width: 68%;
+    float: left;
+    padding: 30px 40px;
+    box-sizing: border-box
+}
+
+input[type="radio"] {
+    position: absolute;
+    left: -9999px
+}
+
+aside.sidebar1 {
+    margin-top: 10%;
+    width: 28%;
+    float: right;
+    padding: 20px;
+    box-sizing: border-box
+}
+
+main.container h1 {
+    font-size: 64px;
+    text-align: center;
+    margin: 8px 0 24px
+}
+
+.menu {
+    border-bottom: 2px solid #d35400;
+    padding-bottom: 6px;
+    margin-bottom: 14px
+}
+
+.menu label {
+    cursor: pointer;
+    padding: 6px 10px;
+    display: inline-block;
+    margin-right: 6px;
+    color: #8a3b10
+}
+
+/* Estilos para enlazar la creación de las pestañas con el menú de navegación */
+#tab-inicio:checked~.tab-section .menu label[for="tab-inicio"],
+#tab-libros:checked~.tab-section .menu label[for="tab-libros"],
+#tab-ebooks:checked~.tab-section .menu label[for="tab-ebooks"] {
+    background: #d35400;
+    color: #fff;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+.content h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 18px 0 8px
+}
+
+.content p {
+    font-size: 14px;
+    margin: 8px 0
+}
+
+
+.pricing img {
+    flex: 0 0 220px; 
+    max-width: 220px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.ebooks .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start
+}
+
+.ebook-item {
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    max-width: calc(33.333% - 20px);
+}
+
+.ebook-item img {
+    width: 100%;
+    max-width: 160px; 
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.pricing {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+@media(max-width:768px) {
+    .ebook-item,
+    .pricing img {
+        flex-basis: 100%;
+        max-width: 100%
+    }
+}
+
+.sidebar1 h3 {
+    margin-top: 0
+}
+
+.sidebar1 .sidebar {
+    background: #0b5b4a;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px
+}
+
+.tab-section {
+    display: none
+}
+
+/* Estilos para enlazar el menú de navegación con cada sección */
+#tab-inicio:checked~#inicio,
+#tab-libros:checked~#libros,
+#tab-ebooks:checked~#ebooks {
+    display: block
+}
+
+@media(max-width:900px) {
+    main.container,
+    aside.sidebar1 {
+        width: 100%;
+        float: none
+    }
+
+    main.container {
+        padding: 16px
+    }
+
+    main.container h1 {
+        font-size: 40px
+    }
+}
