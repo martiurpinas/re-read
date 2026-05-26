@@ -1,49 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Re-read</title>
+    <title>Re-Read</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <!-- Encabezado de la página -->
-    <header>
-        <h1>Re-read</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Re-Read</a></li>
-                <li><a href="#">Libros</a></li>
-                <li><a href="#">ebooks</a></li>
-            </ul>
-        </nav>
-    </header>
-            <div class="banner">
-                <h2><strong>Nunca la lectura ha sido tan necesaria</strong></h2>
-                <p>En estos tiempos difíciles Re-Read se suma al mensaje de #yomequedoencasa por el bien común de la sociedad</p>
-            </div>
+    <header class="header">Re-Read</header>
+    <main class="container">
 
-<!-- Contenido de la pagina libros -->
-    <main>
-         <section class="libros">
-            <h2><strong>Los libros tienen el mismo precio</strong></h2>
-            <p>Libros casi nuevos a un precio casi imposible</p>
-            <div class="book-list">
-                <div class="book-item">
-                    <img src="./images/1-libro-3€.gif" alt="Libro 1">
-                </div>
-                <div class="book-item">
-                    <img src="./images/2-libros-5€.gif" alt="Libro 2">
-                </div>
-                <div class="book-item">
-                    <img src="./images/5-libros-10€.gif" alt="Libro 3">
-                </div>
+        <!--  INPUTS RADIO OCULTOS: creación de las pestañas -->
+        <input type="radio" name="tabs" id="tab-inicio" checked>
+        <input type="radio" name="tabs" id="tab-libros">
+        <input type="radio" name="tabs" id="tab-ebooks">
+        <!-- INICIO -->
+        <section id="inicio" class="tab-section">
+            <h1>Re-Read</h1>
+            <p>En Re-Read podrás encontrar libros de segunda mano en perfecto estado. También vender los tuyos. Porque siempre hay libros leídos y libros por leer. Por eso Re-compramos y Re-vendemos para que nunca te quedes sin ninguno de los dos.</p>
+            
+            <!-- Menú de navegación -->
+            <nav class="menu" id="mainMenu">
+                <label for="tab-inicio" class="re-read-tab">Re-Read</label>
+                <label for="tab-libros" class="libros-tab">Libros</label>
+                <label for="tab-ebooks" class="ebooks-tab">eBooks</label>
+            </nav>
+            <div class="seccion2">
+                <section class="content">
+                    <h2>Nunca la lectura ha sido tan necesaria</h2>
+                    <p>En estos tiempos difíciles Re-Read se suma al mensaje de #yomequedoencasa por el bien común de la sociedad.</p>
+                    <h2>Reduce & Reuse & Read</h2>
+                    <p>Somos la librería Eco-Friendly Re-Read nació pensando en verde con el objetivo de compartir una pasión, la lectura y para expresar una preocupación: si queremos construir un futuro sostenible, es necesario que reduzcamos el consumo y que reutilicemos cuantos más objetos materiales mejor.</p>
+                </section>
             </div>
-            <h2><strong>¿Te cambias de piso? ¿Tienes que vaciar la casa? ¿O sencillamente necesitas algo más de espacio?</strong></h2>
-            <p>En Re-Read compramos tus libros para para darles una segunda vida. Los compramos todos al mismo precio: 0,20€. Siempre hay libros leídos por leer. Por eso Re-compramos y Re-vendemos para que nunca te quedes sin ninguno de los dos.</p>
         </section>
-
+        
+        <!-- LIBROS -->
+        <section id="libros" class="tab-section">
+            <div class="container">
+                <h1>Re-Read</h1>
+                <p>En Re-Read podrás encontrar libros de segunda mano en perfecto estado. También vender los tuyos. Porque siempre hay libros leídos y libros por leer. Por eso Re-compramos y Re-vendemos para que nunca te quedes sin ninguno de los dos.</p>
+            </div>
+            <div class="seccion2">
+                <nav class="menu" id="mainMenu">
+                    <label for="tab-inicio" class="re-read-tab">Re-Read</label>
+                    <label for="tab-libros" class="libros-tab">Libros</label>
+                    <label for="tab-ebooks" class="ebooks-tab">eBooks</label>
+                </nav>
+                <section class="content">
+                    <h2>Todos los libros tienen el mismo precio</h2>
+                    <p>Libros casi nuevos a un precio casi imposible.</p>
+                    <div class="pricing">
+                        <img src="./images/1-libro-3€.gif" alt="Precios de libros">
+                        <img src="./images/2-libros-5€.gif" alt="Precios de libros">
+                        <img src="./images/5-libros-10€.gif" alt="Precios de libros">
+                    </div>
+                    <h2>¿Te cambias de piso? ¿Tienes que vaciar la casa? ¿O sencillamente necesitas algo más de espacio?</h2>
+                    <p>En Re-Read compramos tus libros para darles una segunda vida. Los compramos todos al mismo precio: 0,20 euros. Siempre hay libros leídos y libros por leer. Por eso Re-compramos y Re-vendemos para que nunca te quedes sin ninguno de los dos.</p>
+                </section>
+            </div>
+        </section>
+        <!-- EBOOKS -->
+        <section id="ebooks" class="tab-section">
+            <div class="container">
+                <h1>Re-Read</h1>
+                <p>En Re-Read podrás encontrar libros de segunda mano en perfecto estado. También vender los tuyos. Porque siempre hay libros leídos y libros por leer. Por eso Re-compramos y Re-vendemos para que nunca te quedes sin ninguno de los dos.</p>
+            </div>
+            <div class="seccion2">
+                <nav class="menu" id="mainMenu">
+                    <label for="tab-inicio" class="re-read-tab">Re-Read</label>
+                    <label for="tab-libros" class="libros-tab">Libros</label>
+                    <label for="tab-ebooks" class="ebooks-tab">eBooks</label>
+                </nav>
+                <section class="content">
+                    <h2>Toda la actualidad en eBook</h2>
+                    <div class="ebooks">
+                        <div class="row">
+                            <div class="ebook-item">
+                                <img src="./images/cell.jpeg" alt="Cell - Stephen King">
+                                <p>Cell - Stephen King</p>
+                            </div>
+                            <div class="ebook-item">
+                                <img src="./images/elciclodelhombrelobo.jpeg" alt="El ciclo del hombre lobo - Stephen King">
+                                <p>El ciclo del hombre lobo - Stephen King</p>
+                            </div>
+                            <div class="ebook-item">
+                                <img src="./images/elresplandor.jpeg" alt="El resplandor - Stephen King">
+                                <p>El resplandor - Stephen King</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="ebook-item">
+                                <img src="./images/doctorsleep.jpeg" alt="Doctor Sueño - Stephen King">
+                                <p>Doctor Sueño - Stephen King</p>
+                            </div>
+                            <div class="ebook-item">
+                                <img src="./images/mientrasescribo.jpeg" alt="Mentiras Escritas - Stephen King">
+                                <p>Mentiras Escritas - Stephen King</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
     </main>
-
+    <aside class="sidebar1">
+        <h3>Top ventas</h3>
+        <p class="sidebar">Cien años de soledad.</p>
+        <p class="sidebar">Crónica de una muerte anunciada.</p>
+        <p class="sidebar">El otoño del patriarca.</p>
+        <p class="sidebar">El general en su laberinto.</p>
+    </aside>
+    
 </body>
 </html>
