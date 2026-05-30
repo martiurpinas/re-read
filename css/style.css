@@ -24,6 +24,7 @@ main.container {
     box-sizing: border-box
 }
 
+/* Oculta los inputs de tipo radio fuera de la pantalla, para que no se muestren */
 input[type="radio"] {
     position: absolute;
     left: -9999px
@@ -142,14 +143,14 @@ main.container h1 {
     display: none
 }
 
-/* Estilos para enlazar el menú de navegación con cada sección */
+/* Estilos para enlazar el menú de navegación con cada una de las secciones */
 #tab-inicio:checked~#inicio,
 #tab-libros:checked~#libros,
 #tab-ebooks:checked~#ebooks {
     display: block
 }
 
-/* Sección de estilos para el diseño responsive (las media queries) */
+/* Sección para el diseño responsive para las diferentes pantallas (media queries) */
 @media(max-width:900px) {
     main.container,
     aside.sidebar1 {
