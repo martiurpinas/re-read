@@ -10,6 +10,7 @@ body {
     background: #ffffff;
 }
 
+/* Sección de estilos para el encabezado de la página */
 .header {
     background: #0b5b4a;
     color: #fff;
@@ -19,7 +20,7 @@ body {
 
 main.container {
     width: 68%;
-    float: left;
+    float: left; 
     padding: 30px 40px;
     box-sizing: border-box
 }
@@ -58,7 +59,7 @@ main.container h1 {
     color: #8a3b10
 }
 
-/* Estilos para enlazar la creación de las pestañas con el menú de navegación */
+/* Sección de estilos para enlazar la creación de las pestañas con el menú de navegación */
 #tab-inicio:checked~.tab-section .menu label[for="tab-inicio"],
 #tab-libros:checked~.tab-section .menu label[for="tab-libros"],
 #tab-ebooks:checked~.tab-section .menu label[for="tab-ebooks"] {
