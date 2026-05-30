@@ -18,6 +18,7 @@ body {
     font-weight: 700;
 }
 
+/* Sección de estilos para el contenedor principal o sección principal con tres secciones: inicio, libros y eBooks */
 main.container {
     width: 68%;
     float: left; 
@@ -119,15 +120,6 @@ main.container h1 {
     justify-content: center;
 }
 
-/* Diseño responsive para las secciones de libros y eBooks */
-@media(max-width:768px) {
-    .ebook-item,
-    .pricing img {
-        flex-basis: 100%;
-        max-width: 100%
-    }
-}
-
 .sidebar1 h3 {
     margin-top: 0
 }
@@ -149,6 +141,17 @@ main.container h1 {
 #tab-libros:checked~#libros,
 #tab-ebooks:checked~#ebooks {
     display: block
+}
+
+/* Diseño responsive*/
+
+/* Diseño responsive para las secciones de libros y eBooks */
+@media(max-width:768px) {
+    .ebook-item,
+    .pricing img {
+        flex-basis: 100%;
+        max-width: 100%
+    }
 }
 
 /* Sección para el diseño responsive para las diferentes pantallas (media queries) */
