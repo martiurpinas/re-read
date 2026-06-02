@@ -63,7 +63,8 @@ main.container h1 {
 /* Sección de estilos para enlazar la creación de las pestañas con el menú de navegación */
 #tab-inicio:checked~.tab-section .menu label[for="tab-inicio"],
 #tab-libros:checked~.tab-section .menu label[for="tab-libros"],
-#tab-ebooks:checked~.tab-section .menu label[for="tab-ebooks"] {
+#tab-ebooks:checked~.tab-section .menu label[for="tab-ebooks"],
+#tab-que-es:checked~.tab-section .menu label[for="tab-que-es"] {
     background: #d35400;
     color: #fff;
     border-radius: 4px;
@@ -139,7 +140,8 @@ main.container h1 {
 /* Estilos para enlazar el menú de navegación con cada una de las secciones */
 #tab-inicio:checked~#inicio,
 #tab-libros:checked~#libros,
-#tab-ebooks:checked~#ebooks {
+#tab-ebooks:checked~#ebooks,
+#tab-que-es:checked~#que-es {
     display: block
 }
 
