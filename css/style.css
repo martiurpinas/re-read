@@ -189,7 +189,8 @@ main.container h1 {
 }
 .footer-desktop h3 { margin: 0 0 8px; font-size: 16px; }
 .footer-desktop p { margin: 0; color: #dcdcdc; }
-.footer-desktop .social-icons span { display: inline-block; margin-right: 8px; background: #fff; color: #333; border-radius: 50%; width: 32px; height: 32px; line-height: 32px; text-align: center; }
+.footer-desktop .social-icons a { display: inline-block; margin-right: 8px; background: #fff; color: #333; border-radius: 50%; width: 32px; height: 32px; text-align: center; overflow: hidden; }
+.footer-desktop .social-icons a img { width: 18px; height: 18px; display: block; margin: 7px auto; }
 
 .footer-mobile { display: none; }
 
