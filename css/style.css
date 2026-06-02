@@ -172,3 +172,31 @@ main.container h1 {
         font-size: 40px
     }
 }
+
+/* Footer styles: desktop and mobile */
+.footer-desktop {
+    display: block;
+    background: #333;
+    color: #fff;
+    padding: 28px 40px;
+    box-sizing: border-box;
+    clear: both;
+}
+.footer-desktop .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.footer-desktop h3 { margin: 0 0 8px; font-size: 16px; }
+.footer-desktop p { margin: 0; color: #dcdcdc; }
+.footer-desktop .social-icons span { display: inline-block; margin-right: 8px; background: #fff; color: #333; border-radius: 50%; width: 32px; height: 32px; line-height: 32px; text-align: center; }
+
+.footer-mobile { display: none; }
+
+@media (max-width:600px) {
+    .footer-desktop { display: none; }
+    .footer-mobile { display: flex; position: fixed; bottom: 0; left: 0; right: 0; background: #333; color: #fff; padding: 12px 16px; align-items: center; justify-content: space-between; gap: 12px; z-index: 999; }
+    .footer-mobile .mobile-text { font-size: 14px; }
+    .footer-mobile .mobile-link { background: #d35400; color: #fff; padding: 8px 12px; border-radius: 4px; text-decoration: none; }
+    main.container { padding-bottom: 70px; }
+}
