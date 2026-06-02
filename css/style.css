@@ -173,7 +173,7 @@ main.container h1 {
     }
 }
 
-/* Footer styles: desktop and mobile */
+/* Sección de estilos para el pie de página: escritorio y móvil */
 .footer-desktop {
     display: block;
     background: #333;
@@ -194,6 +194,7 @@ main.container h1 {
 
 .footer-mobile { display: none; }
 
+/* Estilos para el pie de página en dispositivos móviles */
 @media (max-width:600px) {
     .footer-desktop { display: none; }
     .footer-mobile { display: flex; position: fixed; bottom: 0; left: 0; right: 0; background: #333; color: #fff; padding: 12px 16px; align-items: center; justify-content: space-between; gap: 12px; z-index: 999; }
